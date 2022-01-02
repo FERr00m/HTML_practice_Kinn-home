@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Пример">
+  <meta name="keywords" content="Пример">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <!-- Fonts -->
+  <link rel="preload" href="./fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Roboto.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="./fonts/Jost_book.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Jost_book.ttf" as="font" type="font/ttf" crossorigin>
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/vendor/magnific-popup.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Example</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__content-wrap">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#shop">Shop</a>
+            </li>
+            <li class="nav__item">
+              <a href="#quiz">Style Quiz</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#moments">Stories</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a class="header__logo" href="/"><img src="./img/logo.svg" width="90" height="26" alt="KINN"></a>
+
+        <div class="header__user-wrap user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item"><a href="#"><img src="./img/user.svg" width="32" height="32" alt="user"></a></li>
+            <li class="user-nav__item"><a href="#"><img src="./img/search.svg" width="32" height="32" alt="search"></a></li>
+            <li class="user-nav__item"><a class="cart" href="#">
+              <span class="cart__count">0</span>
+              <img src="./img/basket.svg" width="32" height="32" alt="cart">
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <h1 class="visually-hidden">internet shop KINN</h1>
+      <section class="promo">
+        <h2 class="visually-hidden">Promo</h2>
+          <div class="container">
+            <div class="promo__wrap shadow">
+                <p class="promo__text">ALL COLLECTIONS</p>
+                <h2 class="promo__subtitle">Elevate Your Everyday</h2>
+                <a class="promo__btn btn" href="#shop">shop now</a>
+            </div>
+          </div>
+      </section>
+
+      <section class="slogan">
+        <h2 class="visually-hidden">Slogan</h2>
+          <div class="container">
+            <div class="slogan__wrap">
+              <p class="slogan__text">
+                If your happy place is at the dinner table, we totally get that. That’s why we created products to help you find slow moments in a fast world.
+              </p>
+              <div class="slogan__links slogan-links">
+                <a class="slogan-links__link" href="#shop">Shop All <img src="./img/arrow_r.svg" width="14" height="11" alt="arrow"></a>
+                <a class="slogan-links__link" href="#moments">Read Stories <img src="./img/arrow_r.svg" width="14" height="11" alt="arrow"></a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="shop" id="shop">
+        <h2 class="visually-hidden">shop</h2>
+          <div class="container">
+            <div class="shop__wrap shadow">
+              <h3 class="shop__subtitle">Maple Board Collection</h3>
+              <div class="shop__cards">
+                <a href="#">
+                  <figure class="shop__item shop-card">
+                    <picture>
+                      <source srcset="./img/collection1.webp" type="image/webp">
+                      <img width="411" height="411" src="./img/collection1.jpg" alt="описание" />
+                    </picture>
+                    <figcaption class="shop-card__name">Maple Board - Short</figcaption>
+                  </figure>
+                  <div class="shop-card__price">$98.00</div>
+                </a>
+
+                <a href="#">
+                  <figure class="shop__item shop-card">
+                    <picture>
+                      <source srcset="./img/collection2.webp" type="image/webp">
+                      <img width="411" height="411" src="./img/collection2.jpg" alt="описание" />
+                    </picture>
+                    <figcaption class="shop-card__name">Maple Board - Long</figcaption>
+                  </figure>
+                  <div class="shop-card__price">$125.00</div>
+                </a>
+
+                <a href="#">
+                  <figure class="shop__item shop-card">
+                    <picture>
+                      <source srcset="./img/collection3.webp" type="image/webp">
+                      <img width="411" height="411" src="./img/collection3.jpg" alt="описание" />
+                    </picture>
+                    <figcaption class="shop-card__name">Maple Board - Wide</figcaption>
+                  </figure>
+                  <div class="shop-card__price">$158.00</div>
+                </a>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section class="essentials" id="quiz">
+        <div class="container">
+          <div class="essentials__wrap shadow">
+            <h2 class="essentials__title">THE ESSENTIALS</h2>
+            <p class="essentials__text">We believe minimalism means more. More space, more time, more meaningful moments.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2 class="visually-hidden">About us</h2>
+        <div class="container">
+          <div class="about__wrap shadow">
+            <article class="about__article article-about">
+              <picture class="article-about__img">
+                <source srcset="./img/story1.webp" type="image/webp">
+                <img width="743" height="618" src="./img/story1.jpg" alt="описание" />
+              </picture>
+              <div class="article-about__descr-wrap">
+                <h3 class="article-about__title">Our Design Story</h3>
+                <hr class="article-about__line">
+                <p class="article-about__text">We believe in thoughtful, intentional living. So we promise not to clutter your cabinets with one-off pieces you’ll rarely use. Our collection only includes items you’ll reach for every day. Because mindful living should be simple, not stressful.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="about__wrap shadow">
+            <article class="about__article article-about">
+              <div class="article-about__descr-wrap">
+                <h3 class="article-about__title">Your Table Your Time</h3>
+                <hr class="article-about__line">
+                <p class="article-about__text">Our modern lives keep us in constant motion. But what keeps us moving isn’t always what moves us. Our time at the table is our pause button. Meals can become moments and moments can become memories. So grab a plate, pull up a seat, and stay a while</p>
+              </div>
+              <picture class="article-about__img">
+                <source srcset="./img/story2.webp" type="image/webp">
+                <img width="743" height="885" src="./img/story2.jpg" alt="описание" />
+              </picture>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container">
+          <div class="newsletter__wrap shadow">
+            <h2 class="newsletter__title">Sign up to our newsletter</h2>
+            <p class="newsletter__text">Receive special offers and first look at new products.</p>
+            <form class="form">
+              <label>
+                <span class="visually-hidden">email input</span>
+                <input class="form__input input--mail" type="email" name="email" id="email" required>
+              </label>
+
+              <button class="form__btn btn btn--submit" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="moments" id="moments">
+        <h2 class="visually-hidden">Kinn moments</h2>
+        <div class="container">
+          <div class="moments__wrap shadow">
+            <p class="moments__text">
+              #KinnMoments
+            </p>
+            <div class="moments__photos">
+              <a href="./img/moments1.jpg" title="Slide 1" data-source="www.site.com">
+                <picture>
+                  <source srcset="./img/moments1.webp" type="image/webp">
+                  <img width="320" height="320" src="./img/moments1.jpg" alt="описание" />
+                </picture>
+              </a>
+
+              <a href="./img/moments2.jpg" title="Slide 2" data-source="www.site.com">
+                <picture>
+                  <source srcset="./img/moments2.webp" type="image/webp">
+                  <img width="320" height="320" src="./img/moments2.jpg" alt="описание" />
+                </picture>
+              </a>
+
+              <a href="./img/moments3.jpg" title="Slide 3" data-source="www.site.com">
+                <picture>
+                  <source srcset="./img/moments3.webp" type="image/webp">
+                  <img width="320" height="320" src="./img/moments3.jpg" alt="описание" />
+                </picture>
+              </a>
+
+              <a href="./img/moments4.webp" title="Slide 4" data-source="www.site.com">
+                <picture>
+                  <source srcset="./img/moments4.webp" type="image/webp">
+                  <img width="320" height="320" src="./img/moments4.jpg" alt="описание" />
+                </picture>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrap container">
+      <div class="footer__copyrights copyrights">
+        <p class="copyrights__title">© 2021 <span class="copyrights__span">Kinn Home</span></p>
+        <hr class="footer__under-title-line">
+        <p class="copyrights__text">
+          Need to get in touch? Just email us at <a href="mailto:hello@kinnhome.co">hello@kinnhome.co</a>
+        </p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__nav-wrap">
+          <h2 class="footer__title">Explore</h2>
+          <hr class="footer__under-title-line">
+          <div class="footer__descr">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#shop">Shop</a></li>
+              <li class="footer__nav-item"><a href="#quiz">Style Quiz</a></li>
+              <li class="footer__nav-item"><a href="#about">About Us</a></li>
+              <li class="footer__nav-item"><a href="#moments">Stories</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__nav-wrap">
+          <h2 class="footer__title">Help</h2>
+          <hr class="footer__under-title-line">
+          <div class="footer__descr">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#">FAQs + Shipping</a></li>
+              <li class="footer__nav-item"><a href="#">Contact</a></li>
+              <li class="footer__nav-item"><a href="#">Terms</a></li>
+              <li class="footer__nav-item"><a href="#">Trade</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="#">
+            <img src="./img/facebook.svg" width="16" height="23" alt="Facebook">
+            <span class="visually-hidden">Facebook</span>
+    <!-- Социальные сети мы верстаем как контентную картинку со скрытым объяснением, потому что здесь иконка читается однозначно и используется как общепонятный знак -->
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#">
+            <img src="./img/pint.svg" width="22" height="22" alt="Pinterest">
+            <span class="visually-hidden">Pinterest</span>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#">
+            <img src="./img/insta.svg" width="22" height="22" alt="Instagram">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- JS -->
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/vendor/jquery.magnific-popup.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
