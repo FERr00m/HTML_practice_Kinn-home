@@ -6,21 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Пример">
   <meta name="keywords" content="Пример">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="./img/logo.svg">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Fonts -->
   <link rel="preload" href="./fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Roboto.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="./fonts/Jost_book.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Jost_book.ttf" as="font" type="font/ttf" crossorigin>
   <!-- CSS -->
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/vendor/magnific-popup.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Example</title>
+  <title>KINN Home</title>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <div class="header__content-wrap">
+      <div class="header__mobile shadow">
+        <a class="header__mobile-logo" href="/"><img src="./img/logo.svg" width="90" height="26" alt="KINN"></a>
+        <svg class="header__mobile-burger js-burger-btn" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="48" height="48" fill="white" fill-opacity="0.01"></rect>
+          <path d="M7.94977 11.9498H39.9498" stroke="#56593d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M7.94977 23.9498H39.9498" stroke="#56593d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+          <path d="M7.94977 35.9498H39.9498" stroke="#56593d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+
+      <div class="header__content-wrap js-mobile-nav">
         <nav class="header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -40,16 +58,15 @@
 
         <a class="header__logo" href="/"><img src="./img/logo.svg" width="90" height="26" alt="KINN"></a>
 
-        <div class="header__user-wrap user-nav">
-          <ul class="user-nav__list">
-            <li class="user-nav__item"><a href="#"><img src="./img/user.svg" width="32" height="32" alt="user"></a></li>
-            <li class="user-nav__item"><a href="#"><img src="./img/search.svg" width="32" height="32" alt="search"></a></li>
-            <li class="user-nav__item"><a class="cart" href="#">
-              <span class="cart__count">0</span>
-              <img src="./img/basket.svg" width="32" height="32" alt="cart">
-            </a></li>
-          </ul>
-        </div>
+        <ul class="header__user-nav user-nav">
+          <li class="user-nav__item"><a href="#"><img src="./img/user.svg" width="32" height="32" alt="user"></a></li>
+          <li class="user-nav__item"><a href="#"><img src="./img/search.svg" width="32" height="32" alt="search"></a></li>
+          <li class="user-nav__item"><a class="cart" href="#">
+            <span class="cart__count">0</span>
+            <img src="./img/basket.svg" width="32" height="32" alt="cart">
+          </a></li>
+        </ul>
+
       </div>
     </div>
   </header>
@@ -191,7 +208,7 @@
             <p class="moments__text">
               #KinnMoments
             </p>
-            <div class="moments__photos">
+            <div class="moments__photos jq-photos">
               <a href="./img/moments1.jpg" title="Slide 1" data-source="www.site.com">
                 <picture>
                   <source srcset="./img/moments1.webp" type="image/webp">
